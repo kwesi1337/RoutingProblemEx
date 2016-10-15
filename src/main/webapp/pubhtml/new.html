@@ -1,0 +1,31 @@
+<div>
+    
+    <h1>Create a new person</h1>
+    <form role="form">
+        
+        <div class="form-group">
+            
+            <input type="text" ng-model="ctrl.newPerson.name" 
+                   placeholder="enter your name" class="form-control"
+                   id="name" required>
+    </form>
+    
+</div>
+        
+        <div class="form-group">
+            
+            <label for="age">Age:</label>
+            
+            <input type="text" ng-model="ctrl.newPerson.age" placeholder="enter your age" class="form-control" id="age" required>
+        </div>
+        
+        <button type="submit" ng-click="ctrl.createPerson()" class="btn btn-primary">Submit</button>
+                
+    </form>
+    
+    <a href="#/all">Go back</a>
+    
+</div>
+        
+
+

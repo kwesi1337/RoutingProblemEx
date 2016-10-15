@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+         <link rel="shortcut icon" href="assets/nerd.ico">
+        <title>{{ctrl.title}}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+        <script type="text/javascript" src="https://code.angularjs.org/1.4.7/angular-route.min.js"></script>
+        <script type="text/javascript" src="assets/app.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+        <div class="container">
+            
+            <h1> {{ctrl.title}}</h1>
+            
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container">
+                    
+                    <div>
+                        
+                        <ul class="nav navbar-nav">
+                            
+                            <li><a href="#/all">All persons</a></li>
+                            <li><a href ="#/new">New person</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div>
+                
+                <div ng-view="ng-view"></div>
+                
+                
+            </div>
+        </div>
+    </body>
+</html>
